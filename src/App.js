@@ -133,7 +133,7 @@ const processImage = async () => {
   className="feedback-btn"
   onClick={() =>
     window.open(
-      "https://wa.me/918303955153?text=Hi%20Aryan%2C%20I%20have%20feedback%20about%20your%20Image%20Optimizer%20app.",
+      "https://wa.me/918303955153?text=Hi%20Aditya%2C%20I%20have%20feedback%20about%20your%20Image%20Optimizer%20app.",
       "_blank"
     )
   }
