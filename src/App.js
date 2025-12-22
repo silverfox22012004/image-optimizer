@@ -126,11 +126,36 @@ const processImage = async () => {
   return (
     <div className={`app ${darkMode ? "dark" : "light"}`}>
       <header className="header">
-        <h1>Image Optimizer By Aryan For Chhotu Chacha</h1>
-        <button className="toggle" onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? "🌙 Dark" : "☀️ Light"}
-        </button>
-      </header>
+  <h1>Image Optimizer By Aryan For Chhotu Chacha</h1>
+
+  <div className="header-actions">
+    <button
+  className="feedback-btn"
+  onClick={() =>
+    window.open(
+      "https://wa.me/918303955153?text=Hi%20Aryan%2C%20I%20have%20feedback%20about%20your%20Image%20Optimizer%20app.",
+      "_blank"
+    )
+  }
+>
+  💬 Feedback
+</button>
+    <button
+      className="coffee-btn"
+      onClick={() =>
+        window.location.href =
+          "upi://pay?pa=8303955153@upi&pn=Aryan&am=20&cu=INR"
+      }
+    >
+      ☕ Buy Me a Coffee
+    </button>
+
+    <button className="toggle" onClick={() => setDarkMode(!darkMode)}>
+      {darkMode ? "🌙 Dark" : "☀️ Light"}
+    </button>
+  </div>
+</header>
+
 
       <div className="card">
         <input type="file" accept="image/*" onChange={(e) => handleFile(e.target.files[0])} />
