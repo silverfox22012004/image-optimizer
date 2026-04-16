@@ -126,7 +126,7 @@ const processImage = async () => {
   return (
     <div className={`app ${darkMode ? "dark" : "light"}`}>
       <header className="header">
-  <h1>Image Optimizer By Aryan For Chhotu Chacha</h1>
+  <h1>Image Optimizer</h1>
 
   <div className="header-actions">
     <button
